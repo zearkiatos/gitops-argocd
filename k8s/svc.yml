@@ -1,12 +1,12 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: tutorial-server
+  name: argocd-tutorial
   namespace: default
 spec:
   type: LoadBalancer
   selector:
-    app: tutorial-server
+    app: argocd-tutorial
   ports:
     - protocol: TCP
       port: 80
